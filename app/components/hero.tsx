@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Hero = () => {
@@ -25,7 +26,13 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-end mt-6 md:mt-0">
-                    <img src="section1.png" alt="Imagem Ilustrativa" className="w-full max-w-md border-4 rounded-lg" />
+                    <Image 
+                        src="/section1.png" 
+                        alt="Imagem Ilustrativa" 
+                        width={400} 
+                        height={300} 
+                        className="w-full max-w-md border-4 rounded-lg"
+                    />
                 </div>
             </div>
         </section>
